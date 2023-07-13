@@ -1,16 +1,14 @@
 package Khodro;
 
-public class Motor {
-    boolean ayaRoshanAst;
+// Motor yek khodro ast : Motorcycle is a vehicle
+public class Motor extends Khodro {
 
-    public void roshan(){
-        ayaRoshanAst = true;
-    }
-
-    void khamoush(){
-        ayaRoshanAst = false;
-    }
     public boolean ayaDarHaleHarekatAst() {
         return ayaRoshanAst;
+    }
+
+    @Override
+    public String getMark() {
+        return "Motor";
     }
 }
